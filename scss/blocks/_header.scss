@@ -1,0 +1,87 @@
+.header{
+  padding-top: 65px;
+  
+  
+}
+
+
+.header__inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  border-bottom: 1px solid white;
+}
+
+.nav__list{
+  display: flex;
+  align-items: center;
+}
+
+.nav__link{
+  font-family: "Manrope";
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 23px;
+color: #FFFFFF;
+opacity: 0.3;
+transition: all ease 0.3s;
+
+  &:hover{
+    opacity: 1;
+  }
+}
+
+.nav__language{
+  padding: 6px 10px;
+  border: 1px solid white;
+  border-radius: 75px;
+}
+
+.nav__item{
+  margin-right: 35px;
+}
+
+.nav__item:nth-child(4){
+ margin-right: 0px;
+}
+
+.language__for{
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.header__hamburg-btn{
+  display: none;
+  color: #FFFFFF;
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+}
+
+@include media-max (760px){
+  .nav__list{
+    display: none;
+    
+  }
+
+  .header__inner{
+    border-bottom: none;
+  }
+
+  .header__hamburg-btn{
+    display: block;
+  }
+}
+
+@include media-max (510px){
+  .heder__img{
+    width: 100%;
+    max-width: 70px;
+  }
+
+  .header__inner{
+    padding-bottom: 10px;
+  }
+}

@@ -15,7 +15,10 @@ body {
 	font-family:  'Arial', 'sans-serif';
 	margin: 0;
 	padding: 0;
-
+  background-image:url(../images/man.png);
+	background-repeat: no-repeat;
+	background-position: center;
+  
 }
 
 img {
@@ -24,4 +27,14 @@ img {
 
 hr{
 	margin: 0;
+}
+
+ul , li{
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+a{
+	text-decoration: none;
 }
