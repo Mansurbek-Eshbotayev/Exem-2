@@ -383,6 +383,8 @@ body {
   background-image: url(../images/man.png);
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
+  z-index: 1;
 }
 
 img {
@@ -401,6 +403,17 @@ ul, li {
 
 a {
   text-decoration: none;
+}
+
+.line {
+  display: block;
+  width: 1px;
+  height: 1060px;
+  position: absolute;
+  z-index: 2;
+  background-color: white;
+  top: 0px;
+  right: 641px;
 }
 
 .visually-hidden {
@@ -704,6 +717,12 @@ a {
   line-height: 26px;
   color: #FFFFFF;
   opacity: 0.6;
+}
+
+@media only screen and (max-width: 1498px) {
+  .line {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 760px) {

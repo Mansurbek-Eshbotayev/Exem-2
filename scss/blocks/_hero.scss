@@ -167,6 +167,11 @@ color: #FFFFFF;
 opacity: 0.6;
 }
 
+@include media-max (1498px){
+  .line{
+    display: none;
+  }
+}
 
 @include media-max (760px){
   .hero__inner{

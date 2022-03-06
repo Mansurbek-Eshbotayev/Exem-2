@@ -18,7 +18,8 @@ body {
   background-image:url(../images/man.png);
 	background-repeat: no-repeat;
 	background-position: center;
-  
+  position: relative;
+	z-index: 1;
 }
 
 img {
@@ -37,4 +38,15 @@ padding: 0;
 
 a{
 	text-decoration: none;
+}
+
+.line{
+	display: block;
+	width: 1px;
+	height: 1060px;
+	position: absolute;
+	z-index: 2;
+	background-color: white;
+	top: 0px;
+	right: 641px;
 }
